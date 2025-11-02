@@ -34,21 +34,16 @@ function hasTheChar($var_array, $character):bool{
     $count_items = count($var_array);
     $words_with_char = 0;
     foreach ($var_array as $item) {
-        if (strpos($item, $character) !== false) {
-            $words_with_char++;
-            if ($words_with_char == $count_items) {
-                echo "All the words have the character '$character'.\n";
-                return true;
-            }
+        if (strpos($item, $character) === false) {
+            return false;
         }
-    }
-    echo "Not all the words have the character '$character'.\n";
-    return false;
-
+        }
+    return true;
 }
 
-hasTheChar(["apple", "banana", "grape"], "a"); 
-hasTheChar(["apple", "banana", "grape"], "b"); 
+echo hasTheChar(["apple", "banana", "grape"], "a") ? "true" : "false";
+echo "\n";
+echo hasTheChar(["apple", "banana", "grape"], "b") ? "true" : "false";
 
 
 
