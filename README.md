@@ -3,8 +3,6 @@
 
 ## 🛠 Tecnologies  
 - PHP  
-- HTML5  
-- CSS3 *(si inclou estilització bàsica)*  
 
 ## 🚀 Instal·lació  
 1. Clonar el repositori:  
