@@ -7,4 +7,4 @@
 ## 🚀 Instal·lació  
 1. Clonar el repositori:  
    ```bash
-   git clone https://github.com/lxcxsito/EntregaSprint1.git
+   git clone https://github.com/lxcxsito/Sprint1_Arrays.git
