@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 
 //Task 1
 
-$var_1 = [10,20,30,40,50];
+$var_1 = [10, 20, 30, 40, 50];
 
-for ($i=0; $i < count($var_1); $i++) { 
+for ($i = 0; $i < count($var_1); $i++) {
     echo $var_1[$i] . "\n";
 }
 
@@ -13,7 +13,7 @@ for ($i=0; $i < count($var_1); $i++) {
 
 //Task 2
 
-$var_2 = [10,20,30,40,50,60];
+$var_2 = [10, 20, 30, 40, 50, 60];
 
 echo "Array Counter: " . count($var_2) . "\n";
 
@@ -30,14 +30,15 @@ echo "Array Counter After Item deleted: " . count($var_2) . "\n";
 
 //Task 3
 
-function hasTheChar($var_array, $character):bool{
+function hasTheChar($var_array, $character): bool
+{
     $count_items = count($var_array);
     $words_with_char = 0;
     foreach ($var_array as $item) {
         if (strpos($item, $character) === false) {
             return false;
         }
-        }
+    }
     return true;
 }
 
